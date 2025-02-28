@@ -1,8 +1,8 @@
-export const renderErrorMessage = message => {
+export const renderErrorMessage = (message: string) => {
 	const lines = message?.split('\n');
 	return (
 		<span className='input__error'>
-			{lines?.map(line => (
+			{lines?.map((line: string) => (
 				<span key={crypto.randomUUID()}>
 					{line}
 					<br />
