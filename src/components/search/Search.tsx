@@ -54,7 +54,7 @@ const Search = ({ handleData, classNames }: SearchProps) => {
 			</div>
 			{errors.search && (
 				<span className={style.search__containerError}>
-					{renderErrorMessage(errors.search.message)}
+					{errors.search.message && renderErrorMessage(errors.search.message)}
 				</span>
 			)}
 		</form>
