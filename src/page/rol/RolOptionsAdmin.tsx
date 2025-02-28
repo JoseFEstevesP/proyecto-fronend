@@ -158,7 +158,8 @@ const RolOptionsAdmin = ({ className }: { className?: string }) => {
 											))}
 										</div>
 									),
-									type: RolTypeText[item.typeRol],
+									type:
+										RolTypeText[item.typeRol as keyof typeof RolTypeText] || '',
 									actions: (
 										<div className={style.defaultPageStyle__contentBtn}>
 											<Restricted per={Permission.rolDelete}>
