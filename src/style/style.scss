@@ -1,0 +1,36 @@
+@import './animations.scss';
+
+:root {
+	--primary-color: #181818;
+	--secondary-color: #fdfdfd;
+	--border-color: rgba(0, 0, 0, 0.5);
+	--text-color: #181818;
+	--modal-color: #18181880;
+	--accent-color: #d82a3c;
+	--color-yellow: #f5eb13;
+	--color-gray: #656565;
+	--color-green: #12bd4c;
+	--color-blue-dark-blue: #09415f;
+	--color-gradient-blue: #47b6e9 6%, #1282bd 49%, #0f6495 100%;
+	--color-gradient-red: #d82b3d 50% #fef2f2 100%;
+	--shadow: 0 0.25em 0.9375em rgba(24, 24, 24, 0.25);
+	// =================
+	--color: #4c8981;
+	--color-lighter: color-mix(in srgb, var(--color), white 75%);
+	--color-light: color-mix(in srgb, var(--color), white);
+	--color-darker: color-mix(in srgb, var(--color), black 25%);
+	--color-dark: color-mix(in srgb, var(--color), black);
+	--color-gradient: var(--color-lighter) 6%, var(--color-light) 49%,
+		var(--color-dark) 100%;
+	--color-gradient-inverse: var(--color-dark) 6%, var(--color-light) 49%,
+		var(--color-lighter) 100%;
+	--border-radius: 0.3125em;
+	--color-shadow: rgba(0, 0, 0, 0.1);
+
+	--qr-color: var(--primary-color);
+}
+
+#root {
+	width: 100%;
+	min-height: 100vh;
+}

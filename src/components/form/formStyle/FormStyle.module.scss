@@ -1,0 +1,28 @@
+.formStyle {
+	min-width: 20em;
+	max-width: 40em;
+	min-height: 16em;
+	font-size: 1rem;
+	position: relative;
+	background-color: var(--secondary-color);
+	border: 0.125em solid var(--color);
+	padding: 0.625em;
+	padding-top: 2.5em;
+	border-radius: var(--border-radius);
+	margin-top: 1.875em;
+
+	&__logo {
+		position: absolute;
+		font-size: 1em;
+		top: -1.875em;
+		right: 50%;
+		transform: translateX(50%);
+		width: 12.5em;
+		height: 3.75em;
+		border: 0.125em solid var(--color);
+		border-radius: var(--border-radius);
+		background-color: var(--secondary-color);
+		padding: 0.625em;
+		margin: 0;
+	}
+}

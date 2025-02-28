@@ -1,0 +1,35 @@
+.pagination {
+	display: flex;
+	gap: 0.5em;
+	align-items: center;
+
+	&__button {
+		padding: 0.5em 1em;
+
+		background-color: var(--secondary-color);
+		color: var(--text-color);
+		border-radius: var(--border-radius);
+		font-weight: normal;
+
+		&:hover {
+			background-color: var(--color-lighter);
+		}
+
+		&--active {
+			background-color: var(--color);
+			color: var(--secondary-color);
+			border-color: var(--color);
+
+			&:hover {
+				background-color: var(--color);
+			}
+		}
+	}
+	&__icon {
+		rotate: 270deg;
+
+		&--right {
+			rotate: -270deg;
+		}
+	}
+}

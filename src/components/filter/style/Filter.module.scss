@@ -1,0 +1,30 @@
+.filter {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	gap: 0.5em;
+	flex-wrap: wrap;
+
+	&__select {
+		width: auto;
+	}
+
+	&__btn {
+		border-radius: var(--border-radius);
+		background-color: var(--color);
+		padding: 0.5em;
+		text-wrap: wrap;
+		transition: transform 0.3s ease;
+		color: var(--secondary-color);
+
+		&:hover {
+			transform: translateY(-0.125em);
+		}
+
+		&:active {
+			transform: translateY(0);
+		}
+	}
+}

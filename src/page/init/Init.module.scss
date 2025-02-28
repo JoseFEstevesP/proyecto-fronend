@@ -1,0 +1,50 @@
+// WelcomeBanner.module.scss
+.welcomeSection {
+	padding: 4rem 2rem;
+	text-align: center;
+	background-color: #f8f9fa;
+	border-radius: 12px;
+	margin: 2rem auto;
+	max-width: 800px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	animation: fadeIn 1s ease-in;
+
+	@media (max-width: 768px) {
+		margin: 1rem;
+		padding: 2rem 1rem;
+	}
+}
+
+.welcomeHeading {
+	color: #2c3e50;
+	font-size: 2.5rem;
+	margin-bottom: 1.5rem;
+	font-weight: 700;
+
+	@media (max-width: 480px) {
+		font-size: 2rem;
+	}
+}
+
+.welcomeText {
+	color: #34495e;
+	font-size: 1.2rem;
+	line-height: 1.6;
+	margin: 0 auto;
+	max-width: 600px;
+
+	@media (max-width: 480px) {
+		font-size: 1rem;
+	}
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}

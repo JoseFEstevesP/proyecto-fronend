@@ -1,0 +1,52 @@
+.btn {
+	font-size: 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.5em;
+	border: 0;
+	font-weight: bold;
+	position: relative;
+	text-transform: capitalize;
+
+	&--form {
+		width: 100%;
+		min-width: 50%;
+		border-radius: var(--border-radius);
+		background-color: var(--color);
+		padding: 0.625em 1.25em;
+		text-wrap: wrap;
+		transition: transform 0.3s ease;
+
+		&:hover {
+			transform: translateY(-0.125em);
+		}
+
+		&:active {
+			transform: translateY(0);
+		}
+	}
+
+	&__icon {
+		--size: 1.25em;
+	}
+
+	&__iconDisabled {
+		--size: 0.7em;
+
+		width: var(--size);
+		height: var(--size);
+		position: absolute;
+		top: calc(var(--size) / (-2));
+		right: calc(var(--size) / (-2));
+	}
+
+	&--disabled {
+		opacity: 0.5;
+		cursor: not-allowed;
+
+		&:hover {
+			background-color: var(--secondary-color);
+		}
+	}
+}

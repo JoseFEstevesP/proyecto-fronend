@@ -1,0 +1,148 @@
+.defaultPageStyle {
+	font-size: 1rem;
+	width: 100%;
+	height: 100%;
+	display: grid;
+	grid-template-rows: repeat(2, auto) 1fr;
+	grid-template-areas:
+		'options'
+		'filter'
+		'table';
+	gap: 0.5em;
+	justify-items: center;
+	align-items: center;
+	padding: 0.5em;
+
+	&__optionPosition {
+		grid-area: options;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 1em;
+		flex-wrap: wrap;
+	}
+
+	&__filterPosition {
+		grid-area: filter;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__tablePosition {
+		grid-area: table;
+		width: 100%;
+		height: 100%;
+	}
+
+	&__btnRegister {
+		border-radius: var(--border-radius);
+		background-color: var(--color);
+		padding: 0.625em 1.25em;
+		text-wrap: wrap;
+		font-weight: normal;
+		transition: transform 0.3s ease;
+		color: var(--secondary-color);
+
+		&:hover {
+			transform: translateY(-0.125em);
+		}
+
+		&:active {
+			transform: translateY(0);
+		}
+	}
+
+	&__icon {
+		--size: 1.375em;
+
+		color: currentColor;
+		transition: color 0.3s ease-in;
+		&--delete {
+			&:hover {
+				color: var(--accent-color);
+			}
+		}
+
+		&--update {
+			&:hover {
+				color: var(--color-yellow);
+			}
+		}
+
+		&--assign {
+			&:hover {
+				color: var(--color-green);
+			}
+		}
+
+		&--deliveryData {
+			&:hover {
+				color: var(--color-darker);
+			}
+		}
+	}
+
+	&__search {
+		width: 20em;
+	}
+
+	&__contentBtn {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		gap: 0.3125em;
+	}
+
+	&__contentImg {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		gap: 0.3125em;
+	}
+
+	&__image {
+		width: 9.375em;
+	}
+
+	&__title {
+		text-align: center;
+	}
+
+	&__linkEdit {
+		font-size: 1em;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 0.5em;
+		border: 0;
+		font-weight: bold;
+		position: relative;
+		text-transform: capitalize;
+		color: currentColor;
+	}
+
+	&__permissions {
+		max-width: 40em;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		gap: 0.5em;
+		margin: 0 auto;
+	}
+
+	&__permission {
+		padding: 0.3125em 0.625em;
+		border-radius: var(--border-radius);
+		border: 0.0625em solid var(--color);
+	}
+}
